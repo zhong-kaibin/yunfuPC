@@ -1,0 +1,969 @@
+<!DOCTYPE HTML>
+<html lang="zh-cn">
+<head>
+    <meta charset="utf-8">
+     <meta http-equiv="X-UA-Compatible" content="IE=edge"><!--不使用IE兼容模式（杂项）-->
+    <meta name="renderer" content="webkit"><!--默认使用极速模式，目前只有360支持，不过已经够了-->
+    <meta name="viewport" content="width=device-width, initial-scale=1"><!--平板或视网膜屏100%缩放显示网页-->
+    <meta name="description" content=""/>
+    <meta name="keywords" content=""/>
+    <link rel="icon" href="favicon.ico"><!--客户有需要时添加，ico图标-->
+    <title>油卡</title>
+    <link rel="stylesheet" type="text/css" href="css/common.css">
+    <!-- <link rel="stylesheet" type="text/css" href="css/swiper.min.css"> -->
+    <link rel="stylesheet" href="css/idangerous.swiper.css">
+    <link rel="stylesheet" type="text/css" href="css/lucky.css">
+    <link rel="stylesheet" type="text/css" href="css/jonas.css">
+    <link rel="stylesheet" type="text/css" href="css/laughing.css">
+    <script src="js/jquery-1.11.2.min.js"></script>
+    <script type="text/javascript" src="./libs/template7/template7.min.js"></script>
+    <script type="text/javascript" src="js/common.js"></script>
+</head>
+<body>
+<div class="header-1 black-bg">
+    <div class="container header-cont-1 clearfix">
+        <span class="inline-block left">您好，欢迎光临云蚨商城！</span>
+        <div class="right">
+            <a href="my-center.html" class="header-link-2">我的云蚨</a>
+            <a href="order.html" class="header-link-2">我的订单</a>
+            <div class="inline-block relative header-box">
+                <a href="my-center.html" class="header-link-3">帮助中心</a>
+                <ul class="abs header-list">
+                    <li><a href="help-center.html">帮助中心</a></li>
+                    <li><a href="return-service.html">返修/退换货</a></li>
+                    <li><a href="complain-center.html">投诉中心</a></li>
+                    <li><a href="advice-center.html">意见和建议</a></li>
+                    <li><a href="make-appointment.html">预约</a></li>
+                    <li><a href="customer-call.html">电话客服/在线客服</a></li>
+                </ul>
+            </div>
+            <a href="javascript:void(0)" class="header-link-4" onclick="addFavorite()"><i class="star-icon"></i>收藏本站</a>
+            <a href="customer-call.html" class="header-link-4"><i class="call-icon"></i>联系客服</a>
+        </div>
+    </div>
+</div>
+<div class="header-2 black-bg">
+    <div class="container clearfix">
+        <div class="left">
+            <img src="images/lucky-img/logo.png">
+        </div>
+        <div class="right">
+            <img src="images/lucky-img/head-phone-white.png">
+        </div>
+    </div>
+</div>
+<div class="nav-bar">
+    <div class="container nav-bar-box">
+        <a href="index.html">首页</a>
+        <a href="shopping-car.html">购物车</a>
+        <a href="my-center.html">个人中心</a>
+    </div>
+</div>
+<div class="breadcrumb">
+    <div class="container">
+        <a href="index.html">首页</a>
+        <a href="oli-car.html" class="active">油卡套餐</a>
+    </div>
+</div>
+<div class="container car-box">
+    <!-- returnTop -->
+<div class="option-wrapper">
+    <div class="returnTop">^</div>
+    <div class="line"></div>
+    <div class="connectPhone connectPhone1"><div class="connectPhone-logo"></div></div>
+    <div class="line"></div>
+    <div class="online">
+        <a href="javascript:;" onclick="TQKF.OpenChat('acd',223);return false;"></a>
+    </div>
+    <div class="line"></div>
+    <div class="buy-produce-car">
+        <a href="${ctx }/front/shopCart/mine"></a>
+    </div>
+    <div class="line"></div>
+    <div class="online-messages">
+        <a href="${ctx }/jsps/pc/jsp/message-tips.jsp"></a>
+    </div>
+    <div class="iphone-float">
+        <p style="white-space: normal; text-align: center;"><strong><span style="color: rgb(0, 0, 0);">云蚨客服热线</span></strong></p><p style="white-space: normal;"><br></p><p style="white-space: normal; text-align: center;"><span style="font-family: 微软雅黑, 'Microsoft YaHei'; font-size: 20px;"><strong>&nbsp;<span style="font-family: 微软雅黑, 'Microsoft YaHei'; color: rgb(0, 176, 80);">4008088695</span></strong></span></p><p><br></p>
+    </div>
+</div>
+    <div class="swiper-container">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide">
+                <a href="#"><img src="images/lucky-img/banner.png"></a>
+            </div>
+            <div class="swiper-slide">
+                <a href="#"><img src="images/lucky-img/banner.png"></a>
+            </div>
+            <div class="swiper-slide">
+                <a href="#"><img src="images/lucky-img/banner.png"></a>
+            </div>
+        </div>
+        <div class="swiper-pagination"></div>
+        <div class="swiper-btn-prev"><img src="images/laughing-img/left-arrow.png" alt="上一页"></div>
+        <div class="swiper-btn-next"><img src="images/laughing-img/right-arrow.png" alt="下一页"></div>
+    </div>
+    <div class="oil-choose clearfix">
+        <div class="left oil-type">
+            <div class="car-title oil-title">油卡套餐</div>
+            <div class="oc-list-container">
+                <ul class="oil-list">
+                    <li class="oil-list-li" id="oil-type-1" class="active">大众经济版</li>
+                    <li class="oil-list-li" id="oil-type-2">时尚体验版</li>
+                    <li class="oil-list-li" id="oil-type-1" class="active">大众经济版</li>
+                    <li class="oil-list-li" id="oil-type-2">时尚体验版</li>
+                </ul>
+            </div>
+            <div class="oil-operation">
+                <div class="oil-last" data-id="5">上一页</div>
+                <div class="oil-next" data-id="6">下一页</div> 
+            </div>   
+            
+        </div>
+        <div class="right oil-box relative"><!-- checkbox的id不能重复，并且label的for属性必须与前面的id值一致 -->
+            <form class="oil-table oil-tab-1">
+                <table class="table">
+                     <thead class="text-c row cl">
+                            <tr>
+                                <th>序号</th>
+                                <th>享返现金</th>
+                                <th>每月充值(元)</th>
+                                <th>100%到账</th>
+                                <th>赠送白积分</th>
+                                <th>选项</th>
+                            </tr>
+                     </thead>
+                </table>
+                <div class="table-maxHeight" style="height: 136px;overflow-y: scroll;">
+                    <table class="table" >
+                            <tbody class="">
+                                <tr data-id="1">
+                                    <td class="oil-td-first">1.1</td>
+                                    <td>2000</td>
+                                    <td>500</td>
+                                    <td><i class="black-gou"></i></td>
+                                    <td>500</td>
+                                    <td><input type="radio" name="radio-1" value="" id="checkbox1-1" class="oil-checkbox"><label for="checkbox1-1"></label></td>
+                                </tr>
+                                <tr data-id="2">
+                                    <td class="oil-td-first">1.2</td>
+                                    <td>3500</td>
+                                    <td>1000</td>
+                                    <td><i class="black-gou"></i></td>
+                                    <td>1000</td>
+                                    <td><input type="radio" name="radio-1" value="" id="checkbox1-2" class="oil-checkbox"><label for="checkbox1-2"></label></td>
+                                </tr>
+                                <tr data-id="3">
+                                    <td class="oil-td-first">1.3</td>
+                                    <td>3500xN</td>
+                                    <td>1000xN</td>
+                                    <td><i class="black-gou"></i></td>
+                                    <td>1000xN</td>
+                                    <td><input type="radio" name="radio-1" value="" id="checkbox1-3" class="oil-checkbox"><label for="checkbox1-3"></label></td>
+                                </tr>
+                                <tr data-id="3">
+                                    <td class="oil-td-first">1.3</td>
+                                    <td>3500xN</td>
+                                    <td>1000xN</td>
+                                    <td><i class="black-gou"></i></td>
+                                    <td>1000xN</td>
+                                    <td><input type="radio" name="radio-1" value="" id="checkbox1-3" class="oil-checkbox"><label for="checkbox1-3"></label></td>
+                                </tr>
+                                <tr data-id="3">
+                                    <td class="oil-td-first">1.3</td>
+                                    <td>3500xN</td>
+                                    <td>1000xN</td>
+                                    <td><i class="black-gou"></i></td>
+                                    <td>1000xN</td>
+                                    <td><input type="radio" name="radio-1" value="" id="checkbox1-3" class="oil-checkbox"><label for="checkbox1-3"></label></td>
+                                </tr>
+                                <tr data-id="3">
+                                    <td class="oil-td-first">1.3</td>
+                                    <td>3500xN</td>
+                                    <td>1000xN</td>
+                                    <td><i class="black-gou"></i></td>
+                                    <td>1000xN</td>
+                                    <td><input type="radio" name="radio-1" value="" id="checkbox1-3" class="oil-checkbox"><label for="checkbox1-3"></label></td>
+                                </tr>
+                            </tbody>
+                    </table>
+                </div>               
+                <div class="oil-table-tip">备注：套餐以此类推，以3500xN的倍数叠加</div>
+                <div class="oil-table-btn">
+                    <button type="button" class="btn add-to-car">加入购物车</button>
+                    <button type="button" class="btn buy-btn">立即购买</button>
+                </div>
+            </form>
+            <form class="oil-table oil-tab-2 none">
+                <table>
+                    <thead>
+                        <tr>
+                            <td>序号</td>
+                            <td>享返现金</td>
+                            <td>每月充值(元)</td>
+                            <td>100%到账</td>
+                            <td>赠送白积分</td>
+                            <td>选项</td>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr data-id="1">
+                            <td>2.1</td>
+                            <td>2000</td>
+                            <td>500</td>
+                            <td><i class="black-gou"></i></td>
+                            <td>500</td>
+                            <td><input type="radio" name="radio-2" value="" id="checkbox2-1" class="oil-checkbox"><label for="checkbox2-1"></label></td>
+                        </tr>
+                        <tr data-id="2">
+                            <td>2.2</td>
+                            <td>3500</td>
+                            <td>1000</td>
+                            <td><i class="black-gou"></i></td>
+                            <td>1000</td>
+                            <td><input type="radio" name="radio-2" value="" id="checkbox2-2" class="oil-checkbox"><label for="checkbox2-2"></label></td>
+                        </tr>
+                        <tr data-id="3">
+                            <td>2.3</td>
+                            <td>3500xN</td>
+                            <td>1000xN</td>
+                            <td><i class="black-gou"></i></td>
+                            <td>1000xN</td>
+                            <td><input type="radio" name="radio-2" value="" id="checkbox2-3" class="oil-checkbox"><label for="checkbox2-3"></label></td>
+                        </tr>
+                    </tbody>
+                </table>
+                <div class="oil-table-tip">备注：套餐以此类推，以3500xN的倍数叠加</div>
+                <div class="oil-table-btn">
+                    <button type="button" class="btn add-to-car">加入购物车</button>
+                    <button type="button" class="btn buy-btn">立即购买</button>
+                </div>
+            </form>
+            <form class="oil-table oil-tab-3 none">
+                <table>
+                    <thead>
+                        <tr>
+                            <td>序号</td>
+                            <td>享返现金</td>
+                            <td>每月充值(元)</td>
+                            <td>100%到账</td>
+                            <td>赠送白积分</td>
+                            <td>选项</td>                         
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr data-id="1">
+                            <td>3.1</td>
+                            <td>2000</td>
+                            <td>500</td>
+                            <td><i class="black-gou"></i></td>
+                            <td>500</td>
+                            <td><input type="radio" name="radio-3" value="" id="checkbox3-1" class="oil-checkbox"><label for="checkbox3-1"></label></td>
+                        </tr>
+                        <tr data-id="2">
+                            <td>3.2</td>
+                            <td>3500</td>
+                            <td>1000</td>
+                            <td><i class="black-gou"></i></td>
+                            <td>1000</td>
+                            <td><input type="radio" name="radio-3" value="" id="checkbox3-2" class="oil-checkbox"><label for="checkbox3-2"></label></td>
+                        </tr>
+                        <tr data-id="3">
+                            <td>3.3</td>
+                            <td>3500xN</td>
+                            <td>1000xN</td>
+                            <td><i class="black-gou"></i></td>
+                            <td>1000xN</td>
+                            <td><input type="radio" name="radio-3" value="" id="checkbox3-3" class="oil-checkbox"><label for="checkbox3-3"></label></td>
+                        </tr>
+                    </tbody>
+                </table>
+                <div class="oil-table-tip">备注：套餐以此类推，以3500xN的倍数叠加</div>
+                <div class="oil-table-btn">
+                    <button type="button" class="btn add-to-car">加入购物车</button>
+                    <button type="button" class="btn buy-btn">立即购买</button>
+                </div>
+            </form>
+        </div>
+    </div>
+    <div class="car-info">
+        <div class="car-menu">
+            <span class="car-tabMenu active" id="tab-1">商品介绍</span>
+            <!-- <span class="car-tabMenu" id="tab-2">评论</span> -->
+        </div>
+        <div class="car-tab-box">
+            <div class="car-info-1">
+                <div class="car-textList">
+                    品牌：中石油/中石化<br>
+                    油品：汽油/柴油<br>
+                    地区：全国、广州、深圳<br>
+                    卡种：BP、中石油卡、中石化卡、中经汇通<br>
+                </div>
+                <div class="car-infoList">
+                    <img src="images/lucky-img/oli-info.png">
+                </div>
+            </div>
+            <!-- <div class="car-info-2 oil-appraise none">
+                <div class="oil-a-top">
+                    <a href="javascript:void(0);" class="active">全部评价(9)</a>
+                    <a href="javascript:void(0);">有图(2)</a>
+                </div>
+                <div class="oil-a-wrap">
+                    <div class="oil-a-item clearfix">
+                        <div class="left oil-a-left1">
+                            <div class="oil-a-leftTop">
+                                <img src="images/lucky-img/head.png" class="oil-head">
+                                <span class="oil-nickName">昵称昵称</span>
+                            </div>
+                            <div class="oil-a-leftTime">2016-09-09 10:05</div>
+                        </div>
+                        <div class="left oil-a-left2">
+                            <div class="oil-a-leftText">
+                                东西收到了，蛮好的，声音也很小，就是表皮有点凹就去，整体来说都很满意，其次快递大哥人也很好，还帮忙抬上楼，大赞！！！
+                            </div>
+                        </div>
+                        <div class="right oil-a-right">
+                            <div class="oil-a-type">
+                                规格：黑色-A12
+                            </div>
+                        </div>
+                    </div>
+                    <div class="oil-a-item clearfix">
+                        <div class="left oil-a-left1">
+                            <div class="oil-a-leftTop">
+                                <img src="images/lucky-img/head.png" class="oil-head">
+                                <span class="oil-nickName">昵称昵称</span>
+                            </div>
+                            <div class="oil-a-leftTime">2016-09-09 10:05</div>
+                        </div>
+                        <div class="left oil-a-left2">
+                            <div class="oil-a-leftText">
+                                东西收到了，蛮好的，声音也很小，就是表皮有点凹就去，整体来说都很满意，其次快递大哥人也很好，还帮忙抬上楼，大赞！！！
+                            </div>
+                            <div class="oil-a-leftImg">
+                                <img src="images/lucky-img/oli-smimg.png">
+                            </div>
+                        </div>
+                        <div class="right oil-a-right">
+                            <div class="oil-a-type">
+                                规格：黑色-A12
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="page-box">
+                    <div id="laypage"></div>
+                </div>
+            </div> -->
+        </div>
+    </div>
+</div>
+<footer class="j-login-footer">
+    <div class="container clearfix">
+        <div class="j-login-foot-1">
+            <a href="#">关于我们</a>
+            <a href="#">售后服务</a>
+            <a href="#">联系我们</a>
+            <a href="#">免责声明</a>
+            <a href="#">法律声明</a>
+        </div>
+        <div class="j-login-foot-2">
+            <span>电话：400-608-9488</span>
+            <span>传真：020-87247609</span> 
+            <span>E-MAIL：info@goodthree.com</span>     
+            <span>广州市白云区同和街道1128号老庄村君誉商务中心一楼</span>
+        </div>
+        <div class="j-login-foot-3">
+            <p>Copyright 2016 2017 广东云蚨贸易有限公司   粤A2-20044005号 粤ICP备15045834号-2</p>
+        </div>
+    </div>
+</footer>
+
+<!-- <script type="text/javascript" src="js/swiper.min.js"></script> -->
+<script src="js/idangerous.swiper.min.js"></script>
+<script type="text/javascript" src="js/jquery.validate.min.js"></script>
+<script type="text/javascript" src="js/layer/layer.js"></script>
+<script type="text/javascript" src="js/laypage/laypage.js"></script>
+<script type="text/javascript">
+    $(function(){
+        var popup;
+        // var mySwiper = new Swiper ('.swiper-container', {//轮播图效果
+        //     autoplay : 3000,
+        //     loop: true,
+        //     pagination: '.swiper-pagination',
+        //     nextButton: '.swiper-button-next',
+        //     prevButton: '.swiper-button-prev',
+        // });
+        // laypage({//评论分页
+        //     cont: 'laypage',
+        //     pages: 6,//总页数
+        //     curr: 1,//当前页
+        //     groups: 5//连续显示分页数
+        // });
+
+        // var tmpl4 = $('#template4').html();
+        // layer.open({//自定义弹窗
+        //     type:1,
+        //     title:"选择",
+        //     area: '418px',//宽度
+        //     content:tmpl4,
+        //     success: function(layero, index){
+        //         $("#next-btn").on("click",function(){
+        //             var val = $(this).parents(".choose-wrap").find("input:checked").val();
+        //             if(val=="1"){//选择已有油卡
+
+        //             }else if(val=="2"){//选择新卡
+
+        //             }
+        //         })
+        //     }
+        // })
+        //
+        var mySwiper = new Swiper('.swiper-container',{
+            autoplay : 3000,//可选选项，自动滑动
+            loop : true//可选选项，开启循环
+        })
+        $('.swiper-btn-prev').click(function(){
+            mySwiper.swipePrev(); 
+        })
+        $('.swiper-btn-next').click(function(){
+            mySwiper.swipeNext(); 
+        })
+        // 轮播图end
+        var tmpl5 = $('#template5').html();
+           // compiledTemplate = Template7.compile(tmpl5),
+           // //把数据打包丢进模板
+           // tempHtml5 = compiledTemplate(datas2);
+        layer.open({//自定义弹窗
+            type:1,
+            title:"选择已有油卡",
+            area: '1028px',//宽度
+            content:tmpl5,
+            success: function(layero, index){
+                laypage({//评论分页
+                    cont: 'laypage-1',
+                    pages: 6,//总页数
+                    curr: 1,//当前页
+                    groups: 5//连续显示分页数
+                });
+
+                $(".j-myAward-img").on("click",function(){
+                    $(this).addClass("active").siblings().removeClass("active");
+                })
+            }
+        })
+
+        $(".oil-choose").on("click",".oil-list-li",function(){ //油卡套餐tab效果
+            //alert(1)   
+            $(this).addClass("active").siblings().removeClass("active");
+            var wrap = $(".oil-box");
+            var id;//获取id
+            var datas2 = {
+                'title':[{
+                    id:1,
+                    text:'序号'
+                },{
+                    id:2,
+                    text:'享返现金'
+                },{
+                    id:3,
+                    text:'每月充值(元)'
+                },{
+                    id:4,
+                    text:'100%到账'
+                },{
+                    id:5,
+                    text:'赠送白积分'
+                },{
+                    id:6,
+                    text:'选项'
+                }],
+                'dataTable':[{
+                    id:1,
+                    t1:'1.1',
+                    t2:'2000',
+                    t3:'500',
+                    t4:'<i class="black-gou"></i>',
+                    t5:'500',
+                },{
+                    id:2,
+                    t1:'1.2',
+                    t2:'2000',
+                    t3:'500',
+                    t4:'<i class="black-gou"></i>',
+                    t5:'500',
+                },{
+                    id:3,
+                    t1:'1.3',
+                    t2:'2000',
+                    t3:'500',
+                    t4:'<i class="black-gou"></i>',
+                    t5:'500',
+                }],
+                'tips':[
+                    {
+                        id:1,
+                        text:'备注：套餐以此类推，以3500xN的倍数叠加',
+                    }
+                ]
+
+            };
+            var tmpl2 = $('#template2').html(),
+               compiledTemplate = Template7.compile(tmpl2),
+               //把数据打包丢进模板
+               tempHtml = compiledTemplate(datas2);
+               $(".oil-box").html(tempHtml);
+  
+        });
+        $(".oil-checkbox").on("click",function(){//点击选中一项套餐
+            var dataId,
+            isChecked = $(this).prop("checked");
+            if(isChecked){
+                dataId = $(this).parents("tr").attr("data-id");
+            }
+           
+        })
+       var datas = {
+           'brand':[{
+                id:'1',
+                'text':'品牌1'
+            },{
+                id:'2',
+                'text':'品牌2'
+            }],
+            'oil':[{
+                id:'1',
+                'text':'油品1'
+            },{
+                id:'2',
+                'text':'油品2'
+            }],
+            'area':[{
+                id:'1',
+                'text':'地区1'
+            },{
+                id:'2',
+                'text':'地区2'
+            }],
+            'type':[{
+                id:'1',
+                'text':'类型1'
+            }]
+       }
+
+       var tmpl = $('#template').html(),
+           compiledTemplate = Template7.compile(tmpl),
+           //把数据打包丢进模板
+           tempHtml = compiledTemplate(datas);
+ 
+        $(".oil-choose").on("click",".btn",function(){
+            var table = $(this).parents(".oil-table").find("table tbody");
+            var dataId = $(this).parents(".oil-table").find("input.oil-checkbox:checked").parents("tr").attr("data-id");
+            table.find("tr").each(function(index, el) {
+                var isChecked = $(el).find("input:checked").length;
+                if(isChecked>0){//有选中项
+                    popup = layer.open({//自定义弹窗
+                        type:1,
+                        title:"选择属性",
+                        area: '510px',//宽度
+                        content:tempHtml,
+                        success: function(layero, index){
+                            $("#choose-id").val(dataId);
+                            $(".choose-block").on("click",function(){//点击弹窗里的选项
+                                var attr = $(this).attr("data-id");
+                                $(this).addClass("active").siblings().removeClass("active");           
+                            });
+
+                            $(".choose-yes").on("click",function(){//点击确定
+                                var obj = {
+
+                                }
+                            })
+                        }
+                    });
+                    return false;
+                }else{//无选中项
+                    layer.msg('至少选中一项',{
+                        time:800
+                    });
+                }
+            });
+        });
+
+        //油卡定制
+        var tmpl6 = $('#template6').html(),
+           compiledTemplate = Template7.compile(tmpl6),
+           //把数据打包丢进模板
+           tempHtml6 = compiledTemplate("");
+ 
+        $(".oil-choose").on("click",".oil-reserve",function(){
+            var table = $(this).parents(".oil-table").find("table tbody");
+            var dataId = $(this).parents(".oil-table").find("input.oil-checkbox:checked").parents("tr").attr("data-id");
+            table.find("tr").each(function(index, el) {
+                var isChecked = $(el).find("input:checked").length;
+                if(isChecked>0){//有选中项
+                    popup = layer.open({//自定义弹窗
+                        type:1,
+                        title:"油卡定制",
+                        area: '510px',//宽度
+                        content:tempHtml6,
+                        success: function(layero, index){
+                            // $("#choose-id").val(dataId);
+                            // $(".choose-block").on("click",function(){//点击弹窗里的选项
+                            //     var attr = $(this).attr("data-id");
+                            //     $(this).addClass("active").siblings().removeClass("active");           
+                            // });
+
+                            // $(".choose-yes").on("click",function(){//点击确定
+                            //     var obj = {
+
+                            //     }
+                            // })
+                        }
+                    });
+                    return false;
+                }else{//无选中项
+                    layer.msg('至少选中一项',{
+                        time:800
+                    });
+                }
+            });
+        });
+        //油卡订制end
+        $(".oil-choose").on("click",".collect-btn",function(){//收藏效果
+            var that = $(this);
+            var isCollected = that.hasClass('collected-btn');
+            var activeId = $(".oil-list li.active").attr("data-id");
+            if(isCollected){
+                return false;
+            }else{
+                $.ajax({
+                    url: '/path/to/file',
+                    type: 'POST',
+                    dataType: 'json',
+                    data: {id: activeId},
+                    success:function(data){
+                        if(data.stauts=="200"){
+                            that.addClass("collected-btn");
+                            that.html('<i class="icon-star"></i>已收藏');
+                            layer.msg("收藏成功",{
+                                time:800
+                            });
+                        }else{
+                            layer.msg("收藏失败",{
+                                time:800
+                            });
+                        }
+                    }
+                })
+            }
+
+        })
+
+        //油卡搜索
+        $("#search-btn").on("click",function(){
+            $.ajax({
+                url:"",
+                type:"POST",
+                data:"",
+                dataType:"json",
+                success:function(){
+
+                },
+                error:function(){
+
+                }
+            })
+        })
+
+        var scrollbarWidth = $('.table-maxHeight')[0].offsetWidth - $('.table-maxHeight')[0].scrollWidth;
+        $("table:eq(0)").css("paddingRight",scrollbarWidth);    //获取滚动条宽度并赋值到表头padding-right，对齐
+    });
+
+/*returnTop*/
+$(function(){
+    (function(){
+        
+            var Obody = document.body?document.body:document.documentElement;
+            var Oheight = Obody.scrollTop;
+            var Height = document.documentElement.clientHeight;
+            var footHeight = $('.foot').innerHeight();
+            var $wrap = $('.option-wrapper');
+            var $top = $('.returnTop');
+            var timer = null;
+            var time = null;
+            
+            $wrap.css('top',Height/2 - 50);
+            
+            
+            /*if( Oheight>0 ){
+                $top.css('opacity',1);
+            }else if(Oheight<=0){
+                $top.css('opacity',0);
+            };*/
+            
+            window.onscroll = function(){
+                
+                Oheight = Obody.scrollTop;
+                
+                if( Oheight>0 ){
+                    $top.css('opacity',1);
+                }else if(Oheight<=0){
+                    $top.css('opacity',0);
+                }
+            };
+            
+            $top.click(function(){
+                var num = 50;
+                timer = setInterval(function(){
+                    Obody.scrollTop = Obody.scrollTop -num;
+                    
+                    if(Obody.scrollTop == 0){
+                        clearInterval(timer);
+                    }
+                },30)
+                
+            });
+            
+            
+            var btn = true;
+            /*$('.connectPhone').click(function(){
+                
+                if(btn){
+                    $('.iphone-float').stop(true).slideDown();
+                }else{
+                    $('.iphone-float').stop(true).slideUp();
+                }
+                
+                btn = !btn;
+            });
+            
+            
+            
+            $('.connectPhone').get(0).onmouseout = function(){
+                Hide()
+            };*/
+            
+            $('.iphone-float').get(0).onmouseover = function(){
+                clearTimeout(time);
+            };
+            
+            $('.iphone-float').get(0).onmouseout = function(){
+                clearTimeout(time);
+                Hide()
+            };
+            
+            function Hide(){
+                time = setTimeout(function(){
+                    $('.iphone-float').stop(true).slideUp();
+                    btn = true;
+                },3000)
+            };
+    })();
+})
+</script>
+
+<script id="template" type="text/template7">
+    <div class="choose-wrap">
+        <form class="choose-popup">
+            <input type="hidden" name="" id="choose-id">
+            <div class="choose-item">
+                <label class="choose-label">品牌：</label>
+                <div class="choose-right">
+                    {{#each brand}}
+                        {{#js_compare "this.id === '1'"}}
+                            <span class="choose-block active" data-id="{{id}}">{{text}}</span>
+                        {{else}}
+                            <span class="choose-block" data-id="{{id}}">{{text}}</span>
+                        {{/js_compare}}
+                    {{/each}}
+                </div>
+            </div>
+            <div class="choose-item">
+                <label class="choose-label">油品：</label>
+                <div class="choose-right">
+                    {{#each oil}}
+                        {{#js_compare "this.id === '1'"}}
+                            <span class="choose-block active" data-id="{{id}}">{{text}}</span>
+                        {{else}}
+                            <span class="choose-block" data-id="{{id}}">{{text}}</span>
+                        {{/js_compare}}
+                    {{/each}}
+                </div>
+            </div>
+            <div class="choose-item">
+                <label class="choose-label">地区：</label>
+                <div class="choose-right">
+                    {{#each area}}
+                        {{#js_compare "this.id === '1'"}}
+                            <span class="choose-block active" data-id="{{id}}">{{text}}</span>
+                        {{else}}
+                            <span class="choose-block" data-id="{{id}}">{{text}}</span>
+                        {{/js_compare}}
+                    {{/each}}
+                </div>
+            </div>
+            <div class="choose-item">
+                <label class="choose-label">卡种：</label>
+                <div class="choose-right">
+                    {{#each type}}
+                        {{#js_compare "this.id === '1'"}}
+                            <span class="choose-block active" data-id="{{id}}">{{text}}</span>
+                        {{else}}
+                            <span class="choose-block" data-id="{{id}}">{{text}}</span>
+                        {{/js_compare}}
+                    {{/each}}
+                </div>
+            </div>
+            <div class="choose-item">
+                <label class="choose-label choose-numLabel">数量：</label>
+                <div class="choose-right">
+                    <input type="text" class="choose-num" value="1">
+                    <span class="choose-calc">
+                        <span class="choose-btn add-btn">+</span>
+                        <span class="choose-btn reduce-btn">-</span>
+                    </span>
+                    <span class="choose-tips">(当前库存<i class="rest-num">10</i>件)</span>
+                </div>
+            </div>
+            <div class="choose-item">
+                <label class="choose-label choose-numLabel">价格：</label>
+                <div class="choose-right">
+                    <input type="text" class="choose-num" value="1" style="border:none;">
+                </div>
+            </div>
+            <div class="choose-submit-btn">
+                <button type="button" class="choose-yes">确定</button>
+            </div>
+        </form>
+    </div>
+</script>
+
+<script id="template2" type="text/template7">
+    <form class="oil-table">
+        <table>
+            <thead>
+                <tr>
+                    {{#each title}}
+                    <td>{{text}}</td>
+                    {{/each}}
+                </tr>
+            </thead>
+            <tbody>
+                {{#each dataTable}}
+                    <tr data-id="{{id}}">
+                        <td>{{t1}}</td>
+                        <td>{{t2}}</td>
+                        <td>{{t3}}</td>
+                        <td>{{t4}}</td>
+                        <td>{{t5}}</td>
+                        <td><input type="radio" name="radio-3" value="" id="checkbox3-{{id}}" class="oil-checkbox"><label for="checkbox3-{{id}}"></label></td>
+                    </tr>
+                {{/each}}
+            </tbody>
+        </table>
+        <div class="oil-table-tip">{{tips.text}}</div>
+        <div class="oil-table-btn">
+            <button type="button" class="collect-btn"><i class="icon-star"></i>收藏</button>
+            <button type="button" class="btn add-to-car">加入购物车</button>
+            <button type="button" class="btn buy-btn">立即购买</button>
+            <button type="button" class="btn oil-reserve">油卡订制</button>
+        </div>
+    </form>
+</script>
+
+<!-- 选择是否使用旧卡弹窗 -->
+<script id="template4" type="text/template7">
+    <div class="choose-wrap">
+        <div class="choose-item">
+            <label for="choose-1" class="chooseCard-label">
+                <input type="radio" name="radio-choose" class="none" id="choose-1" checked="true" value="1"><span></span>已有油卡
+            </label>
+            <label for="choose-2" class="chooseCard-label">
+                <input type="radio" name="radio-choose" class="none" id="choose-2" value="2"><span></span>新卡
+            </label>
+        </div>
+        <div class="choose-submit-btn">
+            <button type="button" class="choose-yes" id="next-btn">下一步</button>
+        </div>
+    </div>
+</script>
+
+<!-- 选择已有油卡弹窗 -->
+<script id="template5" type="text/template7">
+    <div class="my-oil-card">
+        <form id="oil-search">
+            <div class="search-div clearfix">   
+                <input type="text" placeholder="搜索">
+                <span id="search-btn"><img src="" alt=""><img src="images/laughing-img/search.png" alt="搜索"></span>
+            </div>
+            
+        </form>
+        <div class="my-oilCard-list clearfix">
+            <div class="j-myAward-img active">
+                <div class="j-myAward-text">
+                    <p class="j-myAward-title"><span>我的油卡号</span><span  class="cardCode">1256894</span></p>
+                    <ul class="j-myAward-kind clearfix">
+                        <li class="left">品牌：<span>中石油</span></li>
+                        <li class="left">油品：<span>汽油</span></li>
+                        <li class="left">地区：<span>全国</span></li>
+                        <li class="left">卡种：<span>中石油卡</span></li>
+                        <li class="left">使用人：<span>取消消</span></li>
+                        <li class="left">卡主：<span>小小明</span></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="j-myAward-img">
+                <div class="j-myAward-text">
+                    <p class="j-myAward-title"><span>我的油卡号</span><span>1256894</span></p>
+                    <ul class="j-myAward-kind clearfix">
+                        <li class="left">品牌：<span>中石油</span></li>
+                        <li class="left">油品：<span>汽油</span></li>
+                        <li class="left">地区：<span>全国</span></li>
+                        <li class="left">卡种：<span>中石油卡</span></li>
+                        <li class="left">使用人：<span>取消消</span></li>
+                        <li class="left">卡主：<span>小小明</span></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="j-myAward-img">
+                <div class="j-myAward-text">
+                    <p class="j-myAward-title"><span>我的油卡号</span><span>1256894</span></p>
+                    <ul class="j-myAward-kind clearfix">
+                        <li class="left">品牌：<span>中石油</span></li>
+                        <li class="left">油品：<span>汽油</span></li>
+                        <li class="left">地区：<span>全国</span></li>
+                        <li class="left">卡种：<span>中石油卡</span></li>
+                        <li class="left">使用人：<span>取消消</span></li>
+                        <li class="left">卡主：<span>小小明</span></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="choose-submit-btn">
+            <a href="javascript:void(0)" class="confirm-btn" id="confirm">充值</a>
+        </div>
+        <div class="page-box">
+            <div id="laypage-1"></div>
+        </div>
+    </div>
+</script>
+<script id="template6" type="text/template7">
+    <form action="">
+        <div class="oil-reserve-pop">
+            <div class="oil-reserve-item">
+                <label for="" class="oil-reserve-label">金额</label>
+                <input type="text" class="oil-reserve-text">
+            </div>
+            <div class="oil-reserve-tip">
+                <img src="images/laughing-img/succeed.png" alt="">最低充值金额1000元
+            </div>
+            <div class="oil-reserve-btn">
+                <input type="button" value="确定" class="oil-reserve-submit">
+            </div>
+        </div>
+    </form>
+    
+</script>
+</body>
+</html>

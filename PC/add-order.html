@@ -1,0 +1,524 @@
+<!DOCTYPE HTML>
+<html lang="zh-cn">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"><!--不使用IE兼容模式（杂项）-->
+    <meta name="renderer" content="webkit"><!--默认使用极速模式，目前只有360支持，不过已经够了-->
+    <meta name="viewport" content="width=device-width, initial-scale=1"><!--平板或视网膜屏100%缩放显示网页-->
+    <meta name="description" content=""/>
+    <meta name="keywords" content=""/>
+    <link rel="icon" href="favicon.ico"><!--客户有需要时添加，ico图标-->
+    <title>促销</title>
+    <link rel="stylesheet" type="text/css" href="css/common.css">
+    <link rel="stylesheet" type="text/css" href="css/swiper.min.css">
+    <link rel="stylesheet" type="text/css" href="css/lucky.css">
+    <link rel="stylesheet" type="text/css" href="css/jonas.css">
+    <link rel="stylesheet" type="text/css" href="css/laughing.css">
+    <script src="js/jquery-1.11.2.min.js"></script>
+    <script type="text/javascript" src="js/layer/layer.js"></script>
+    <script type="text/javascript" src="./libs/template7/template7.min.js"></script>
+    <script type="text/javascript" src="js/common.js"></script>
+</head>
+<body>
+<div class="header-1 black-bg">
+    <div class="container header-cont-1 clearfix">
+        <span class="inline-block left">您好，欢迎光临云蚨商城！</span>
+        <div class="right">
+            <a href="my-center.html" class="header-link-2">我的云蚨</a>
+            <a href="order.html" class="header-link-2">我的订单</a>
+            <div class="inline-block relative header-box">
+                <a href="my-center.html" class="header-link-3">帮助中心</a>
+                <ul class="abs header-list">
+                    <li><a href="help-center.html">帮助中心</a></li>
+                    <li><a href="return-service.html">返修/退换货</a></li>
+                    <li><a href="complain-center.html">投诉中心</a></li>
+                    <li><a href="advice-center.html">意见和建议</a></li>
+                    <li><a href="make-appointment.html">预约</a></li>
+                    <li><a href="customer-call.html">电话客服/在线客服</a></li>
+                </ul>
+            </div>
+            <a href="javascript:void(0)" class="header-link-4" onclick="addFavorite()"><i class="star-icon"></i>收藏本站</a>
+            <a href="customer-call.html" class="header-link-4"><i class="call-icon"></i>联系客服</a>
+        </div>
+    </div>
+</div>
+<div class="header-2 black-bg">
+    <div class="container clearfix">
+        <div class="left">
+            <img src="images/lucky-img/logo.png">
+        </div>
+        <div class="right">
+            <img src="images/lucky-img/head-phone-white.png">
+        </div>
+    </div>
+</div>
+<div class="nav-bar">
+    <div class="container nav-bar-box">
+        <a href="index.html">首页</a>
+        <a href="shopping-car.html">购物车</a>
+        <a href="my-center.html">个人中心</a>
+    </div>
+</div>
+<div class="breadcrumb">
+    <div class="container">
+        <a href="index.html">首页</a>
+        <a href="buy-car.html" class="active">促销</a>
+    </div>
+</div>
+<div class="container car-box">
+    <div class="swiper-container">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide">
+                <a href="#"><img src="images/lucky-img/banner.png"></a>
+            </div>
+            <div class="swiper-slide">
+                <a href="#"><img src="images/lucky-img/banner.png"></a>
+            </div>
+            <div class="swiper-slide">
+                <a href="#"><img src="images/lucky-img/banner.png"></a>
+            </div>
+        </div>
+        <div class="swiper-pagination"></div>
+        <div class="swiper-button-prev swiper-button-white"></div>
+        <div class="swiper-button-next swiper-button-white"></div>
+    </div>
+    <div class="sales-choose clearfix">
+        <div class="left sales-type">
+            <div class="sales-title">促销</div>
+            <ul class="sales-list clearfix">
+                <li class="left sales-menu-list" data-id="1">拼单</li>
+                <li class="left sales-menu-list" data-id="2">预购</li>
+                <li class="left sales-menu-list" data-id="3">拍卖</li>
+            </ul>
+        </div>
+        <div class="right  relative sales-messages ">
+            <div class="choose-tab">
+                <ul class="clearfix">
+                    <li class="sale-tab sale-tab-active" id="saleContain-1">
+                        油卡
+                    </li>
+                    <li class="sale-tab" id="saleContain-2">
+                        汽车
+                    </li>
+                </ul>
+            </div>
+            <div class="choose-tab-container saleContain1">
+                <div class="sale-tab-item">
+                    <table>
+                        <tr class="produt-tr">
+                            <td class="produt-td">产品 <span class="wish-copy">奢想版3.6</span></td>
+                            <td class="produt-td" ></td>
+                            <td class="produt-td">总金额：<span class="produt-td-price">￥36,，000</span><!-- <span class="produt-td-btn">拼单</span> --></td>
+                        </tr>
+                        <tr class="produt-tr bg-active">
+                            <td class="produt-td produt-td-border">总油费：36,000</td>
+                            <td class="produt-td produt-td-border">首次到帐油费：￥7,000</td>
+                            <td class="produt-td">月到帐油费：￥7,000</td>
+                        </tr>
+                        <tr class="produt-tr">
+                            <td class="produt-td produt-td-border">总油费：36,000</td>
+                            <td class="produt-td produt-td-border">首次到帐油费：￥7,000</td>
+                            <td class="produt-td">月到帐油费：￥7,000</td>
+                        </tr>
+                        <tr>
+                            <td class="produt-td produt-td-border">总油费：36,000</td>
+                            <td class="produt-td produt-td-border">首次到帐油费：￥7,000</td>
+                            <td class="produt-td">月到帐油费：￥7,000</td>
+                        </tr>
+                    </table>   
+                                
+                </div>
+                <div class="order-ticket order-ticket-choosed">
+	                <div class="order-ticket-title ">拼单券<span class="order36 order36-1">36万拼单券</span></div>
+	                <div class="order-ticket-content"><span>有效期：截止2017-08-09</span><span>限定人数：10人</span><span>限定金额：≥36万</span></div>
+	                <span class="order-checkbox"> <input type="checkbox"><b></b></span>
+      			</div>
+                <div class="child-order-container">
+                </div> 
+                
+            </div>
+            <div class="choose-tab-container saleContain2 none">
+                我是汽车的内容
+            </div>
+            <div class="choose-tab-btn none">
+            	<div class="clearfix">
+            		<div class="left"><span class="order-checkbox"><input type="checkbox" name="chose-order" class="child-order-option" id="choose-all"><b></b></span><span>全选</span><span id="del-chose-order" class="del-chose-order" style="cursor: pointer;">删除选择子菜单</span></div>
+            		<div class="right">
+	            		<span>可分配金额：￥7,000</span>
+						<span id="add-order-num">可添加子订单数：8</span>
+            		</div>
+            	</div>
+                <div class="order-confirm-div"  >
+                    <input type="button" value="提交" class="order-ticket-confirm1">
+                </div>
+            </div>
+            <div class="add-child-order">
+                <img src="images/laughing-img/add-child-order.png" alt="">
+            </div>
+        </div>
+    </div> 
+</div>    
+<footer class="j-login-footer">
+    <div class="container clearfix">
+        <div class="j-login-foot-1">
+            <a href="#">关于我们</a>
+            <a href="#">售后服务</a>
+            <a href="#">联系我们</a>
+            <a href="#">免责声明</a>
+            <a href="#">法律声明</a>
+        </div>
+        <div class="j-login-foot-2">
+            <span>电话：400-608-9488</span>
+            <span>传真：020-87247609</span> 
+            <span>E-MAIL：info@goodthree.com</span>     
+            <span>广州市白云区同和街道1128号老庄村君誉商务中心一楼</span>
+        </div>
+        <div class="j-login-foot-3">
+            <p>Copyright 2016 2017 广东云蚨贸易有限公司   粤A2-20044005号 粤ICP备15045834号-2</p>
+        </div>
+    </div>
+</footer>   
+<script id="templ3" type="text/template7">
+    <div class="order-ticket-pop">
+        <form>
+           <div class="order-ticket">
+               <div class="order-ticket-title">拼单券<span class="order36">36万拼单券</span></div>
+               <div class="order-ticket-content"><span>有效期：截止2017-08-09</span><span>限定人数：10人</span><span>限定金额：≥36万</span></div>
+               <span class="order-checkbox"> <input type="radio" name="lala"><b></b></span>
+           </div>
+           <div class="order-ticket">
+               <div class="order-ticket-title">拼单券<span class="order36">36万拼单券</span></div>
+               <div class="order-ticket-content"><span>有效期：截止2017-08-09</span><span>限定人数：10人</span><span>限定金额：≥36万</span></div>
+               <span class="order-checkbox"> <input type="radio" name="lala"><b></b></span>
+           </div>
+           <div class="order-ticket-btn">
+           		<input type="button" value="确定" class="order-ticket-confirm">
+           		<input type="button" value="取消" class="order-ticket-cancel">
+           </div>
+        </form>
+    </div>
+</script>
+<!-- 子订单的模板 -->
+<script id="templ4" type="text/template7">
+    <div class="sale-tab-item  child-order">
+        <div class="produt-th">
+            <span class="order-checkbox"><input type="checkbox" name="chose-order" class="child-order-option child-order-option1"><b></b></span>
+            <span class="produt-td-child">子订单ID：{{id}}</span>
+            <span class="produt-td-child" >云蚨ID <input type="text" class="produt-input" value="{{yunfuid}}"></span>
+            <span class="produt-td-child">金额(元)：<input type="text" class="produt-input" value="{{money}}"></span>
+            <span class="produt-td-child">油卡账号：<input type="text" class="produt-input" value="{{account}}"></span>
+            <span class="produt-td-child"><b class="product-edit">编辑</b><b class="product-del">删除</b></span>
+        </div>
+        <table>            
+            <tr class="produt-tr">
+                <td class="produt-td produt-td-border">总油费：36,000</td>
+                <td class="produt-td produt-td-border">首次到帐油费：￥7,000</td>
+                <td class="produt-td">月到帐油费：￥7,000</td>
+            </tr>
+            <tr class="produt-tr">
+                <td class="produt-td produt-td-border">总油费：36,000</td>
+                <td class="produt-td produt-td-border">首次到帐油费：￥7,000</td>
+                <td class="produt-td">月到帐油费：￥7,000</td>
+            </tr>
+            <tr>
+                <td class="produt-td produt-td-border">总油费：36,000</td>
+                <td class="produt-td produt-td-border">首次到帐油费：￥7,000</td>
+                <td class="produt-td">月到帐油费：￥7,000</td>
+            </tr>
+        </table>                   
+    </div>
+</script>
+<script  type="text/template7" id="add-child-pop">
+    <div class="order-ticket-pop" >
+        <form>
+           <div class="clearfix add-child-container">
+               <div class="add-child-item">
+               <label for="">云蚨ID:</label><input type="text" id="yunfuid">
+               </div>
+               <div class="add-child-item">
+                   <label for="">金额（元）:</label><input type="text" id="money">
+               </div>
+               <div class="ao-choose-card">
+                    <label for="choose-2" class="chooseCard-label">
+                        <input type="radio" name="radio-choose" class="none" id="choose-2" value="2"><span></span>新卡
+                    </label>
+                   <label for="choose-1" class="chooseCard-label">
+                        <input type="radio" name="radio-choose" class="none" id="choose-1" checked="true" value="1"><span></span>已有油卡
+                    </label>
+               </div>
+               <div class="add-child-item">
+                   <label for="">油卡账号:</label><input type="text" id="account">
+               </div>
+           </div>
+           
+           <div class="order-ticket-btn">
+                <input type="button" value="确定" class="order-ticket-confirm">
+                <input type="button" value="取消" class="order-ticket-cancel">
+           </div>
+        </form>
+    </div>
+</script>
+<script type="text/javascript" src="js/swiper.min.js"></script>
+<script type="text/javascript" src="js/jquery.validate.min.js"></script>
+<script type="text/javascript" src="js/layer/layer.js"></script>
+<script type="text/javascript">
+    // 判断是否显示包裹全选按钮的容器
+    var fnShowAllChose = function(){
+        if ($(".child-order").length>0) {
+            $(".choose-tab-btn").removeClass("none");
+        } else {
+            $(".choose-tab-btn").addClass("none");
+        }
+    },
+    //判断全选按钮是否要选中
+    fnAllChooseChecked = function(){
+        var len = $(".child-order-option1").length;
+        var checkLen = $("input.child-order-option1:checked").length;
+        if(checkLen==len){
+            $("#choose-all").prop("checked",true);
+        }else{
+            $("#choose-all").prop("checked",false);
+        }
+    }
+    $(function(){
+        var popup;
+        var mySwiper = new Swiper ('.swiper-container', {//轮播图效果
+            autoplay : 3000,
+            loop: true,
+            pagination: '.swiper-pagination',
+            nextButton: '.swiper-button-next',
+            prevButton: '.swiper-button-prev',
+        });
+
+        $(".sale-tab").on("click",function(){//油卡和汽车tab效果
+            $(this).addClass("sale-tab-active").siblings().removeClass("sale-tab-active");
+            $(".saleContain"+this.id.split("-")[1]).removeClass('none').siblings(".choose-tab-container").addClass("none");
+        })
+
+        /*$(".car-list li").on("click",function(){//点击汽车类型切换图片
+            var id = $(this).attr("data-id");
+            $.ajax({
+                url: '/path/to/file',
+                type: 'GET',
+                dataType: 'json',
+                data: {"id": id },
+                success:function(data){
+
+                }
+            })
+        })*/
+
+        $("#car-style-hidden").val($("#car-style").val());
+        $(".car-checkbox").on("click",function(){//车型单选框
+            var thisId = this.id;
+            var that = $(this);
+            var isChecked = that.prop("checked");
+            if(isChecked && thisId == "radio-1"){
+                $("#car-style").val($("#car-style-hidden").val());
+                $("#car-style").attr("readonly","readonly")
+            }else{
+                $("#car-style").removeAttr("readonly");
+                $("#car-style").val("").focus();
+            }
+        })
+
+        /*$(".car-smImgList li").on("click",function(){//点击汽车小图显示大图
+            var src = $(this).find('img').attr("src");
+            var carId = $(this).attr("data-id");//获取汽车id
+            $(this).parent().siblings(".car-bigImg").attr("src",src);
+        })
+        */
+        /*$(".car-form").validate({//购车下单表单验证
+            rules:{
+                "uername":{
+                    required:true,
+                },
+                "phone":{
+                    required:true,
+                },
+                "type":{
+                    required:true,
+                }
+            },
+            messages:{
+                "uername":{
+                    required:"此项不能为空",
+                },
+                "phone":{
+                    required:"此项不能为空",
+                },
+                "type":{
+                    required:"此项不能为空",
+                }
+            },
+            submitHandler:function(form){//点击提交按钮弹窗
+                var datas = {
+                   'color':[{
+                        id:'1',
+                        'text':'颜色1'
+                    },{
+                        id:'2',
+                        'text':'颜色2'
+                    }],
+                    'type1':[{
+                        id:'1',
+                        'text':'类型1'
+                    },{
+                        id:'2',
+                        'text':'类型2'
+                    }],
+                    'type2':[{
+                        id:'1',
+                        'text':'类型1'
+                    },{
+                        id:'2',
+                        'text':'类型2'
+                    }]
+               };
+               var tmpl = $('#templ3').html(),
+                   compiledTemplate = Template7.compile(tmpl),
+                   //把数据打包丢进模板
+                   tempHtml = compiledTemplate(datas);
+                popup = layer.open({//自定义弹窗
+                    type:1,
+                    title:"选择属性",
+                    area: '510px',//宽度
+                    content:tempHtml,
+                    success: function(layero, index){
+                        $(".choose-block").on("click",function(){//点击弹窗里的选项
+                            var attr = $(this).attr("data-id");
+                            $(this).addClass("active").siblings().removeClass("active");
+                            $.ajax({
+                                url: '/path/to/file',
+                                type: 'POST',
+                                dataType: 'json',
+                                data: {param1: attr},
+                                success:function(data){//返回库存量
+                                    $(".rest-num").text(data);
+                                }
+                            })                
+                        });
+
+                        $(".choose-yes").on("click",function(){//点击确定
+                            var obj = {
+
+                            }
+                        })
+                    }
+                })
+            }
+        });*/
+
+        $(document).on("click",".choose-yes",function(){//点击弹窗确定按钮，异步提交
+            layer.close(popup);
+        })
+
+       
+        //添加子订单
+        $(".add-child-order").click(function(){
+            layer.open({//自定义弹窗
+                type:1,
+                title:"添加子订单",
+                area: '580px',//宽度
+                content:$("#add-child-pop").html(),
+                success: function(layero, index){
+                    /*$(".choose-block").on("click",function(){//点击弹窗里的选项
+                        var attr = $(this).attr("data-id");
+                        $(this).addClass("active").siblings().removeClass("active");
+                        $.ajax({
+                            url: '/path/to/file',
+                            type: 'POST',
+                            dataType: 'json',
+                            data: {param1: attr},
+                            success:function(data){//返回库存量
+                                $(".rest-num").text(data);
+                            }
+                        })                
+                    });*/
+
+                    $(".order-ticket-confirm").on("click",function(){//点击确定
+                        var datas = {
+                           id:"1",
+                           yunfuid:$("#yunfuid").val(),
+                           money:$("#money").val(),
+                           account:$("#account").val(),
+                        };
+                        var tmpl = $('#templ4').html(),
+                        compiledTemplate = Template7.compile(tmpl),
+                        //把数据打包丢进模板
+                        tempHtml = compiledTemplate(datas);
+                        $(".child-order-container").append(tempHtml);
+                        layer.close(layer.index);
+                        fnShowAllChose();
+                        fnAllChooseChecked();
+                        //删除子订单
+                        $(".child-order-container").off().on('click','.product-del',function(){
+                            var _this = $(this);
+                            layer.confirm('确定要删除该订单吗?', function(index){
+                              //do something
+                                _this.parents(".child-order").remove();
+                                fnShowAllChose();  
+                                layer.close(index);                          
+                            });    
+                        })
+                        //全选
+                        /*$(".sales-messages").on('click','.choose-all',function(){
+                            $(".child-order-option").each(function(){
+                                $(this).attr("checked","checked");
+                            })
+                            
+                        })*/
+                        //$('#choose-all', ".sales-messages").off('change').on("change", function(){
+                        $(".sales-messages").on("change",'#choose-all',function(){//控制全选效果
+                            var isChecked = $(this).prop("checked");
+                            var cname = this.className;
+                            var checkLen;
+                            if(isChecked){
+                                $("."+cname).prop("checked",true);
+                            }else{
+                                $("."+cname).prop("checked",false);
+                            }
+                            checkLen = $("input.child-order-option:checked").length;
+                            console.log(checkLen)
+                        })
+                        //$(".child-order-option1", ".sales-messages").off('change').on("change", function(){
+
+                        $(".sales-messages").on("change",".child-order-option1",function(){//控制子选项选中效果
+                            fnAllChooseChecked();
+                        })
+
+                        //批量删除
+                        $("#del-chose-order",".sales-messages").off().on("click", function(){
+                        //$(".sales-messages").on("click","#del-chose-order",function(){//控制子选项选中效果
+                            var len = $("input.child-order-option1:checked").length;
+                            if (len<1) {
+                                layer.msg("请选择要删除的子订单");
+                            } else {
+                                layer.confirm('确定要删除选中的子订单吗?', function(index){
+                                  //把选中的子订单逐个移除
+                                    $("input.child-order-option1:checked").each(function(){
+                                        $(this).parents(".child-order").remove();
+                                        fnShowAllChose();
+                                    })
+                                    layer.close(index);
+                                });
+                            }
+                            
+                            
+                        })
+
+                    })
+                    $(".order-ticket-cancel").on("click",function(){//点击取消
+                        layer.close(layer.index);
+                    })
+                }
+            })
+        })
+
+        $(".sales-menu-list").on("click",function(){
+            $(this).addClass("sales-menu-actived").siblings().removeClass("sales-menu-actived");
+        })
+    })
+</script>
+</body>
+</html>
